@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szaszki</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="menu-panel">
+            <h1 class='title'>Szaszki</h1>
+            <button class="start-button">Start</button>
+        </div> -->
+
+        <div class="board">
+            <div class="content">
+                <div class="dice ">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="base left top" data-base="red">
+                    <div class="field red"><i class="fas fa-circle red" data-id='3'></i></div>
+                    <div class="field red"><i class="fas fa-circle red" data-id='2'></i></div>
+                    <div class="field red"><i class="fas fa-circle red" data-id='1'></i></div>
+                    <div class="field red"><i class="fas fa-circle red" data-id='0'></i></div>
+                </div>
+                <div class="base right top" data-base="green">
+                    <div class="field green"><i class="fas fa-circle green" data-id='3'></i></div>
+                    <div class="field green"><i class="fas fa-circle green" data-id='2'></i></div>
+                    <div class="field green"><i class="fas fa-circle green" data-id='1'></i></div>
+                    <div class="field green"><i class="fas fa-circle green" data-id='0'></i></div>
+                </div>
+                <div class="base right bot" data-base="yellow">
+                    <div class="field yellow"><i class="fas fa-circle yellow" data-id='3'></i></div>
+                    <div class="field yellow"><i class="fas fa-circle yellow" data-id='2'></i></div>
+                    <div class="field yellow"><i class="fas fa-circle yellow" data-id='1'></i></div>
+                    <div class="field yellow"><i class="fas fa-circle yellow" data-id='0'></i></div>
+                </div>
+                <div class="base left bot" data-base="blue">
+                    <div class="field blue"><i class="fas fa-circle blue" data-id='3'></i></div>
+                    <div class="field blue"><i class="fas fa-circle blue" data-id='2'></i></div>
+                    <div class="field blue"><i class="fas fa-circle blue" data-id='1'></i></div>
+                    <div class="field blue"><i class="fas fa-circle blue" data-id='0'></i></div>
+                </div>
+
+
+                <div class="track">
+                    <div class="field row-1 col-5 right-bot" data-fieldID='8'>8</div>
+                    <div class="field row-1 col-6 horizontal" data-fieldID='9'>9</div>
+                    <div class="field row-1 col-7 green left-bot" data-fieldID='10' data-start='green'>10</div>
+
+                    <div class="field row-2 col-5 vertical" data-fieldID='7'>7</div>
+                    <div class="field row-2 col-7 vertical" data-fieldID='11'>11</div>
+                    <div class="field row-3 col-5 vertical" data-fieldID='6'>6</div>
+                    <div class="field row-3 col-7 vertical" data-fieldID='12'>12</div>
+                    <div class="field row-4 col-5 vertical" data-fieldID='5'>5</div>
+                    <div class="field row-4 col-7 vertical" data-fieldID='13'>13</div>
+                    <div class="field row-5 col-5 left-top" data-fieldID='4'>4</div>
+                    <div class="field row-5 col-7 right-top" data-fieldID='14'>14</div>
+
+                    <div class="field row-5 col-4 horizontal" data-fieldID='3'>3</div>
+                    <div class="field row-5 col-3 horizontal" data-fieldID='2'>2</div>
+                    <div class="field row-5 col-2 horizontal" data-fieldID='1'>1</div>
+                    <div class="field row-5 col-1 red right-bot" data-fieldID='0' data-start='red'>0</div>
+
+                    <div class="field row-5 col-8 horizontal" data-fieldID='15'>15</div>
+                    <div class="field row-5 col-9 horizontal" data-fieldID='16'>16</div>
+                    <div class="field row-5 col-10 horizontal" data-fieldID='17'>17</div>
+                    <div class="field row-5 col-11 left-bot" data-fieldID='18'>18</div>
+
+                    <div class="field row-6 col-1 vertical " data-fieldID='39'>39</div>
+                    <div class="field row-6 col-11 vertical" data-fieldID='19'>19</div>
+
+                    <div class="field row-7 col-1 right-top" data-fieldID='38'>38</div>
+                    <div class="field row-7 col-2 horizontal" data-fieldID='37'>37</div>
+                    <div class="field row-7 col-3 horizontal" data-fieldID='36'>36</div>
+                    <div class="field row-7 col-4 horizontal" data-fieldID='35'>35</div>
+                    <div class="field row-7 col-5 left-bot" data-fieldID='34'>34</div>
+
+                    <div class="field row-7 col-7 right-bot" data-fieldID='24'>24</div>
+                    <div class="field row-7 col-8 horizontal" data-fieldID='23'>23</div>
+                    <div class="field row-7 col-9 horizontal" data-fieldID='22'>22</div>
+                    <div class="field row-7 col-10 horizontal" data-fieldID='21'>21</div>
+                    <div class="field row-7 col-11 yellow left-top" data-fieldID='20' data-start='yellow'>20</div>
+
+                    <div class="field row-8 col-5 vertical" data-fieldID='33'>33</div>
+                    <div class="field row-9 col-5 vertical" data-fieldID='32'>32</div>
+                    <div class="field row-10 col-5 vertical" data-fieldID='31'>31</div>
+                    <div class="field row-11 col-5 blue right-top" data-fieldID='30' data-start='blue'>30</div>
+                    <div class="field row-8 col-7 vertical" data-fieldID='25'>25</div>
+                    <div class="field row-9 col-7 vertical" data-fieldID='26'>26</div>
+                    <div class="field row-10 col-7 vertical" data-fieldID='27'>27</div>
+                    <div class="field row-11 col-7 left-top" data-fieldID='28'>28</div>
+                    <div class="field row-11 col-6 horizontal" data-fieldID='29'>29</div>
+
+                    <div class="finish">
+                        <div class="field big row-6 col-2  red left" data-id='0'>0</div>
+                        <div class="field big row-6 col-3  red left" data-id='1'>1</div>
+                        <div class="field big row-6 col-4  red left" data-id='2'>2</div>
+                        <div class="field big row-6 col-5  red left" data-id='3'>3</div>
+
+                        <div class="field big row-2 col-6  green top" data-id='0'>0</div>
+                        <div class="field big row-3 col-6  green top" data-id='1'>1</div>
+                        <div class="field big row-4 col-6  green top" data-id='2'>2</div>
+                        <div class="field big row-5 col-6  green top" data-id='3'>3</div>
+
+                        <div class="field big row-6 col-7  yellow right" data-id='3'>3</div>
+                        <div class="field big row-6 col-8  yellow right" data-id='2'>2</div>
+                        <div class="field big row-6 col-9  yellow right" data-id='1'>1</div>
+                        <div class="field big row-6 col-10  yellow right" data-id='0'>0</div>
+
+                        <div class="field big row-7 col-6  blue bot" data-id='3'>3</div>
+                        <div class="field big row-8 col-6  blue bot" data-id='2'>2</div>
+                        <div class="field big row-9 col-6  blue bot" data-id='1'>1</div>
+                        <div class="field big row-10 col-6  blue bot" data-id='0'>0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/game2.js"></script>
+</body>
+
+</html>
